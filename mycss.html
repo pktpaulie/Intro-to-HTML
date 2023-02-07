@@ -2,61 +2,100 @@
 <html lang="en">
 
 <head>
-    <title>Test</title>
-    <style>
-        table, th, td{
-            border: 1px solid black;
-        }
+    <title>CSS</title>
+    <link rel="stylesheet" href="./css/cohort13.css">
+    <style> 
+    h1,h2{
+        color:blue;
+        font-family: verdana;
+        font-size: 300%;
+        border: 2px solid powderblue;
+    }
         p{
-            color: red;
-            text-align: center;
-            font-size: medium;
-            font-weight: bold;
-        }
-        h1{
-            text-align: center;
-            color: blue;
-            font-size: xx-large;
-            font-weight: bold;
-        }
-        img{
-            display: block;
-
-        }
+            color: rgba(189, 5, 206, 0.5);
+            font-family: courier;
+            font-size: 160%;
+            padding: 10px;
+            margin: 30px;
+        } 
     </style>
-    </head>
+    <!--
+        Based on what is loaded last to select btn internal and external
+    -->
+        
+</head>
     <body style="background-color: oldlace;">
-    <a href="index.html">Home</a> | 
-    <a href="pauline.html">Pauline</a> | 
-    <a href="about.html">About</a> |
-    <a href="mycss.html">CSS</a> | 
-    <a href="test.html">Test</a>
+    <a href="index.html" target="_self">Home</a> | 
+    <a href="pauline.html" target="_parent">Pauline</a> | 
+    <a href="about.html" target="_top">About</a> |
+    <a href="mycss.html" target="_blank">CSS</a> | 
+    <a href="test.html" target="_parent">Test</a>
 
     <h1>CSS</h1>
     <p>Testing CSS</p>
     <!-- I'll be trying out alot of formatting options to grasp html and css-->
-    <h2 style="text-align: center;">Centered Heading</h2>
+    <h2 style="font-size: 180%;">This is another Heading</h2>
     
     <div>
         <!--
             Group a bunch of things together
         -->
     </div>
+    <a href="default.asp" title="A cool smiley">
+        <img src="./images/smiley.gif" alt="smiley gif" 
+        style="width:42px;height:42px;padding-left: 50px;">
+    </a> <br>
+    <button onclick="document.location='https://www.w3schools.com/html/default.asp'">Click Me</button>
+    <a href="https://www.w3schools.com/html/default.asp">HTML Tutorial</a>
+
+    <p style="color:rgb(204, 8, 230);"> 
+        My Bonnie lies over the ocean.
+        My Bonnie lies over the sea.
+        My Bonnie lies over the ocean.
+        Oh, bring back my Boniie to me 
+    </p>
+    
+    <!-- 
     <img src="./images/tiger.jpg" alt="Tiger Image" 
     height="200px" width="280px">
-    <h2>Images and Tables</h2>
-    <p>Random images will be displayed Here <br></p> 
     <a href="./images/mtnuganda.com">
     <img src="./images/stethoscope.png" alt="Stethoscope" width="150px"></a>
     <img src="./images/sugar.png" alt="Sugar" height="100px" width="">
     <img src="./images/surf.jpg" alt="Surf" height="100px" width="">
+    
+    -->
     
 
     <p style="font-size:50px;">Check out Big Text</p>
     <p style="font-size: 25px;" style="font-family: Verdana;">My size is different 
         <br> <i>I am a also a Cool Italicized Font</i> </p>
     <p style="font-family: Lucida Sans;">This is different and <b>Bold</b></p>
-    <p style="text-align: center; border: 1px solid tomato;">Centered Text Paragraph <br>
+    
+    <p class="odd">Centered Text Paragraph <br>
+    it has some formulae <i>E = mc<sup>2</sup></i> <br>
+    T = t <sub>end</sub> - t <sub>start</sub> <br>
+    We can also reference <sup>[12]</sup> like this <br>
+    <small>a footnote is this size</small><br>
+    You can <em>Emphasize some things</em> in your paragraphs
+    Or point out <strong>Important things</strong> easily
+    We can <del>delete</del> or <ins>insert</ins> here <br>
+    I <mark>highlighted this bit</mark> of my text. <br>
+
+</p>
+
+<p class="even">Centered Text Paragraph <br>
+    it has some formulae <i>E = mc<sup>2</sup></i> <br>
+    T = t <sub>end</sub> - t <sub>start</sub> <br>
+    We can also reference <sup>[12]</sup> like this <br>
+    <small>a footnote is this size</small><br>
+    You can <em>Emphasize some things</em> in your paragraphs
+    Or point out <strong>Important things</strong> easily
+    We can <del>delete</del> or <ins>insert</ins> here <br>
+    I <mark>highlighted this bit</mark> of my text. <br>
+
+</p>
+
+<p class="even" id="#paulineKoru">Centered Text Paragraph <br>
     it has some formulae <i>E = mc<sup>2</sup></i> <br>
     T = t <sub>end</sub> - t <sub>start</sub> <br>
     We can also reference <sup>[12]</sup> like this <br>
@@ -68,7 +107,6 @@
 
 </p>
 <p>
-
     This is a quote I copied from WWF's website:
     <blockquote cite="http://www.worldwildlife.org/who/index.html" style="color: mediumseagreen;"> 
         For 60 years, WWF has worked to help people and nature thrive. 
@@ -76,17 +114,17 @@
         nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that 
         protect communities, wildlife, and the places in which they live
     </blockquote>
-    <p style="background-color: rgb(255, 99, 71);">Here is a short quote I want to try: <q>Never say never in all you do</q></p>
+</p> 
+    <p>Here is a short quote I want to try: <q>Never say never in all you do</q></p>
     <p>A <abbr title="Toes to Bar">TTB</abbr> is a classic crossfit movement</p>
-    <p><address style="background-color: rgba(255, 255, 71, 0.5);"> My address is not on google maps but <br>
+    <p><address> My address is not on google maps but <br>
     Find me at: <br> 
     Plot 404 <br>
     Unknown Street <br>
     Uganda</address></p>
-</p>    
+    
+    <a href="mailto:myemail@example.com">Send Email</a>
+   
 <p style="background-color: hsla(9, 100%, 64%, 0.5);"> <cite>The Scream </cite>by Edvard Munch. Painted in 1983</p>
-<bdo dir="rtl">I am going from right to left</bdo>
-
-    <p style="font-family: Georgia;">Yap</p>
-    <p style="background-color: dodgerblue;">Formatted Text Follows</p>
+<p style="background-color: dodgerblue;">Formatted Text Follows</p>
 </html>

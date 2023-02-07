@@ -1,0 +1,47 @@
+
+<style>
+        table, th, td{
+            border: 1px solid black;
+        }
+        body{
+            background-image: url("./images/plants.jpg");
+        }
+        p{
+            color: red;
+            text-align: center;
+            font-size: medium;
+            font-weight: bold;
+        }
+        h1{
+            text-align: center;
+            color: blue;
+            font-size: xx-large;
+            font-weight: bold;
+        }
+        img{
+            
+
+        }
+        .odd{
+            text-align: left;
+            color: red;
+        }
+        .even{
+            text-align: right;
+            color: blue;
+        }
+        div > p{
+            color: green;
+        }
+        #paulineKoru {
+            font-size: 40px;
+            font-weight: bold;
+        }
+        #uniqueHeader{
+            color: red;
+        }
+        #kemigisha{
+            background-color: green;
+        }
+
+    </style>
